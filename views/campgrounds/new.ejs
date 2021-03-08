@@ -4,36 +4,47 @@
 <div class="row">
     <h1 class="text-center">New campground</h1>
     <div class="col-6 offset-3">
-        <form action="/campgrounds" method="post">
+        <form action="/campgrounds" method="post" novalidate  class="validated-form">
             <div class="mb-3">
                 <label for="title" class="form-label">Title</label>
-                <input type="text" class="form-control" id="title" name="campground[title]">
+                <input type="text" class="form-control" id="title" name="campground[title]" required>
+                <div class="valid-feedback">looks good!</div>
+                <div class="invalid-feedback">Please select a valid state.</div>
             </div>
             <div class="mb-3">
                 <label for="location" class="form-label">Location</label>
-                <input type="text" class="form-control" id="location" name="campground[location]">
+                <input type="text" class="form-control" id="location" name="campground[location]" required>
+                <div class="valid-feedback">looks good!</div>
+                <div class="invalid-feedback">Please select a valid state.</div>
             </div>
             <div class="mb-3">
                 <label for="image" class="form-label">Image Url</label>
-                <input type="text" class="form-control" id="image" name="campground[image]">
+                <input type="text" class="form-control" id="image" name="campground[image]" required>
+                <div class="valid-feedback">looks good!</div>
+                <div class="invalid-feedback">Please select a valid state.</div>
             </div>
             <div class="mb-3">
                 <label class="form-label" for="price">Campground Price</label>
                 <div class="input-group">
                     <span class="input-group-text" id="price-label">$</span>
-                    <input type="number" id="price" class="form-control" name="campground[price]" placeholder="0.00" aria-label="price" aria-describedby="price-label">
+                    <input type="text" id="price" class="form-control" name="campground[price]" placeholder="0.00" aria-label="price" aria-describedby="price-label" required>
+                    <div class="valid-feedback">looks good!</div>
+                    <div class="invalid-feedback">Please select a valid state.</div>
                   </div>
             </div>
            
             <div class="mb-3">
                 <label for="description" class="form-label">Description</label>
-                <textarea type="text" class="form-control" id="description" name="campground[description]"></textarea>
+                <textarea type="text" class="form-control" id="description" name="campground[description]" required></textarea>
+                <div class="valid-feedback">looks good!</div>
+                <div class="invalid-feedback">Please select a valid state.</div>
             </div>
-            <div class="mb-3"> 
+            <div class="mb-3">
                 <button type="submit" class="btn btn-success">Submit</button>
             </div> 
         </form>
         <a href="/campgrounds">All campgounds</a>
     </div>
 </div>
+
 
