@@ -2,13 +2,15 @@
 YelpCamp is a full-stack website project where users can create and review campgrounds
 
 
-#Functionalities
+**Functionalities**
+
 *Everyone can view the camps and reviews without signing up or logging in.
 *The user will have to login to edit the campground details or any comments.
 *The user can only edit/delete the campgrounds and comments that they have added.
 *All the data will pe persistent and is stored in the awazon cloud.
 
-#Technologies Used:
+**Technologies Used:**
+
 *HTML5 - markup language for creating web pages and web applications
 *CSS3 - used for describing the presentation of a document written in a markup language
 *Bootstrap - free and open-source front-end web framework for designing websites and web applications quickly
