@@ -44,4 +44,16 @@ This project is being created created using Node.js, Express, MongoDB, and Boots
 >AWS - mongodb is hosted on amazon ec2 instance
 
 ## Screenshots
->Comming soon........
+>HomePage
+![home](https://user-images.githubusercontent.com/51289274/113733448-1a3ac300-9718-11eb-9fc7-defb8d2cd9c1.png)
+
+>All Campgrounds
+![All campgrounds](https://user-images.githubusercontent.com/51289274/113733438-173fd280-9718-11eb-8a0d-8e13f1ab3d45.png)
+
+->Single Campground ShowPage
+![showPage](https://user-images.githubusercontent.com/51289274/113733465-1e66e080-9718-11eb-9ffe-8b047640942a.png)
+
+->Login & Register page
+![login,register](https://user-images.githubusercontent.com/51289274/113734300-d8f6e300-9718-11eb-801e-5cb4698a1560.png)
+
+
