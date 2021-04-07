@@ -1,0 +1,133 @@
+body {
+  margin: 0px;
+  box-sizing: border-box;
+}
+main {
+  height: 100vh;
+  background-image: linear-gradient(
+    45deg,
+    rgba(225, 225, 224, 1),
+    rgba(225, 200, 200, 0.5)
+  );
+}
+
+.top_heading {
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.top_heading h1 {
+  text-decoration: none;
+  color: black;
+  font-size: 3em;
+
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 1)),
+    color-stop(50%, rgba(0, 0, 0, 0.5)),
+    to(rgba(0, 0, 0, 1))
+  );
+}
+.top_heading span {
+  font-size: 1.2em;
+}
+
+.intro {
+  display: flex;
+  font-family: "Dancing Script", cursive;
+}
+.intro_text {
+  border-bottom: 1px solid brown;
+}
+.intro_image {
+  position: relative;
+  display: flex;
+  padding-left: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.img_container {
+  left: 30px;
+  /* background-color: white; */
+}
+.img_container img {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  border: 10px solid white;
+}
+p:nth-child(1) {
+  color: red;
+  margin-left: 10px;
+}
+p:nth-child(2) {
+  margin-left: 20px;
+}
+p:nth-child(3) {
+  margin-left: 40px;
+}
+
+.connect {
+  width: 50%;
+}
+.connect > ul {
+  display: flex;
+}
+.connect > ul li {
+  padding: 10px;
+  text-shadow: brown;
+  font-weight: 500;
+}
+ul li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+/* .social_icons li a i {
+  color: #384c31;
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  font-size: 2rem;
+  border-radius: 50%;
+}
+.social_icons li a i:hover {
+  box-shadow: 0px 0px 6px 2px rgba(230, 196, 196, 0.5);
+} */
+
+@media only screen and (max-width: 768px) {
+  main {
+    height: 130vh;
+    background-image: linear-gradient(
+      45deg,
+      rgba(225, 225, 224, 1),
+      rgba(225, 200, 200, 0.5)
+    );
+  }
+  .intro {
+    display: flex;
+    flex-direction: column-reverse;
+    font-family: "Dancing Script", cursive;
+  }
+  .intro_text {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid brown;
+  }
+  .intro_image {
+    width: 100%;
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: center;
+  }
+
+  .img_container img {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 10px solid white;
+  }
+}

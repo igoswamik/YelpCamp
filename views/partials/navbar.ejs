@@ -1,7 +1,9 @@
+<script src="https://kit.fontawesome.com/6acd34060b.js" crossorigin="anonymous"></script>
+
 <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">YelpCamp</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -9,7 +11,14 @@
           <a class="nav-link" href="/">Home</a>
           <a class="nav-link" href="/campgrounds">campgrounds</a>
           <a class="nav-link" href="/campgrounds/new">new campgrounds</a>
-         
+        </div>
+        <div class="navbar-nav ml-auto">
+          <% if(!currentUser){ %> 
+          <a class="nav-link" href="/login">Login</a>
+          <a class="nav-link" href="/register">Register</a>
+          <% }else{ %> 
+          <a class="nav-link" href="/logout">Logout</a>
+          <% } %> 
         </div>
       </div>
     </div>

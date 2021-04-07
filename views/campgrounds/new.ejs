@@ -3,8 +3,8 @@
 <!-- //offset can be used as one way of centering things -->
 <div class="row">
     <h1 class="text-center">New campground</h1>
-    <div class="col-6 offset-3">
-        <form action="/campgrounds" method="post" novalidate  class="validated-form">
+    <div class="col-md-6 offset-md-3">
+        <form action="/campgrounds" method="post" novalidate  class="validated-form" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="title" class="form-label">Title</label>
                 <input type="text" class="form-control" id="title" name="campground[title]" required>
@@ -17,12 +17,23 @@
                 <div class="valid-feedback">looks good!</div>
                 <div class="invalid-feedback">Please select a valid state.</div>
             </div>
+            <!-- <div class="form-file">
+                <input type="file" class="form-file-input" id="image" name="image" multiple>
+                <label for="image" class="form-file-label">
+                    <span class="form-file-text">Choose image(s)...</span>
+                    <span class="form-file-button">Browse</span>
+                </label>
+            </div> -->
             <div class="mb-3">
+                <label for="image" class="form-label">Choose Image(s)</label>
+                <input class="form-control" type="file" id="image" name="image" multiple>
+              </div>
+            <!-- <div class="mb-3">
                 <label for="image" class="form-label">Image Url</label>
                 <input type="text" class="form-control" id="image" name="campground[image]" required>
                 <div class="valid-feedback">looks good!</div>
                 <div class="invalid-feedback">Please select a valid state.</div>
-            </div>
+            </div> -->
             <div class="mb-3">
                 <label class="form-label" for="price">Campground Price</label>
                 <div class="input-group">
@@ -43,7 +54,7 @@
                 <button type="submit" class="btn btn-success">Submit</button>
             </div> 
         </form>
-        <a href="/campgrounds">All campgounds</a>
+        <!-- <a href="/campgrounds">All campgounds</a> -->
     </div>
 </div>
 

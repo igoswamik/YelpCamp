@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/about.css">
+    <script src="https://kit.fontawesome.com/6acd34060b.js" crossorigin="anonymous"></script>
+</head>
+<body >
+    <%- include('./partials/navbar') %> 
+    <main class="container-fluid">
+        <div class="row mb-3">
+            <div class="top_heading mt-5">
+                <h1>I built This Website</h1>
+                <span class="text-muted">Hope U Like It</span>
+            </div>
+            <div class="intro mb-3 mt-5" >
+                <div class="intro_text col-md-6 col-sm-12">
+                    <p class="red">like most people I'm no good at writing about myself but here goes...</p>
+                    <p>Hi, I'm <b>Kulbhushan Goswami</b>. A full-stack developer and a competitive programmer, based in Prayagraj, India. YelpCamp is my first full-stack project which I built during my prefinal year at Indian Institute of Technology Guwahati as a part of Colt steele's web development bootcamp 2021 course.</p>
+                    <p>I love what I do and I enjoy being challenged and engaging with projects that require me to work outside my comfort and knowledge set, as continuing to learn new languages and development techniques are important to me. </p>
+                </div>
+                <div class="intro_image col-md-6 col-s-12">
+                    <div class="img_container">
+                    <img src="https://res.cloudinary.com/igoswamik/image/upload/v1617793911/YelpCamp/v85zopockixdrpredjsp.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="connect mb-3">
+            <ul>
+                <li> <a target="_blank" href="http://facebook.com">facebook<i class="fa fab fa-facebook"></i></i></a></li>
+                <li> <a target="_blank" href="http://instagram.com">instagram</a></li>
+                <li> <a target="_blank" href="https://www.linkedin.com/in/kg457/">linkedin</a></li>
+                <li> <a target="_blank" href="https://github.com/igoswamik">Github</a></li>
+            </ul>
+        </div>
+    </main>
+    <%- include('./partials/footer') %>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+</body>
+</html>
